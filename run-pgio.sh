@@ -133,6 +133,7 @@ do
   mv ${PGIO_HOME}/mpstat.out ${RUN_HOME}/lap0${LAP}.mpstat.${ZEROS}${NUM_SCHEMAS}schemas.out
   mv ${PGIO_HOME}/vmstat.out ${RUN_HOME}/lap0${LAP}.vmstat.${ZEROS}${NUM_SCHEMAS}schemas.out
   mv ${PGIO_HOME}/iostat.out ${RUN_HOME}/lap0${LAP}.iostat.${ZEROS}${NUM_SCHEMAS}schemas.out
+  mv ${PGIO_HOME}/pgio_session_detail.out ${RUN_HOME}/lap0${LAP}.pgio_sesssion_detail.${ZEROS}${NUM_SCHEMAS}schemas.out
 
   echo "Taking a 120 seconds nap before next lap..."
   sleep 120
