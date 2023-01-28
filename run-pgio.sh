@@ -132,7 +132,7 @@ do
   echo "Saving results..."
   mv ${PGIO_HOME}/mpstat.out ${RUN_HOME}/lap0${LAP}.mpstat.${ZEROS}${NUM_SCHEMAS}schemas.out
   mv ${PGIO_HOME}/vmstat.out ${RUN_HOME}/lap0${LAP}.vmstat.${ZEROS}${NUM_SCHEMAS}schemas.out
-  mv ${PGIO_HOME}/iostat.out ${RUN_HOME}/lap0${LAP}.nfsiostat.${ZEROS}${NUM_SCHEMAS}schemas.out
+  mv ${PGIO_HOME}/iostat.out ${RUN_HOME}/lap0${LAP}.iostat.${ZEROS}${NUM_SCHEMAS}schemas.out
 
   echo "Taking a 120 seconds nap before next lap..."
   sleep 120
