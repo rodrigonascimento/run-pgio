@@ -107,6 +107,8 @@ RUN_HOME=${RESULTS_HOME}/${TEST_TYPE}/${RUN_NAME}
 f_edit_slob_conf "RUN_TIME" ${LAP_RUN_TIME}
 f_edit_slob_conf "NUM_SCHEMAS" ${PGIO_SCHEMA_START}
 
+NUM_SCHEMAS=${PGIO_SCHEMA_START}
+
 while [ ${LAP} -le ${MAX_LAPS} ]
 do
   if [ ${NUM_SCHEMAS} -ge 1 ] && [ ${NUM_SCHEMAS} -le 9 ]
