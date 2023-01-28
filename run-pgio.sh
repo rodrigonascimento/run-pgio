@@ -126,7 +126,7 @@ do
   echo "TEST_TYPE = ${TEST_TYPE}"
   echo "RUN_NAME = ${RUN_NAME}"
   echo "MAX_LAPS = ${MAX_LAPS}"
-  ${PGIO_HOME}/runit.sh > ${RUN_HOME}/lap${LAP}.pgio.${ZEROS}${NUM_SCHEMAS}schemas.out 
+  ${PGIO_HOME}/runit.sh > ${RUN_HOME}/lap0${LAP}.pgio.${ZEROS}${NUM_SCHEMAS}schemas.out 
   sleep 3
 
   echo "Saving results..."
