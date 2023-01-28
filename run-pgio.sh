@@ -59,7 +59,7 @@ function f_arg_parser() {
     PGIO_SCHEMA_START=${10}
   fi
 
-  if [ ${11}} != "-incs" ]
+  if [ ${11} != "-incs" ]
   then
     echo "Positional argument different than -incs"
     exit 1
