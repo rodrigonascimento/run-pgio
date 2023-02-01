@@ -107,7 +107,7 @@ f_create_dirs
 f_edit_slob_conf "RUN_TIME" ${LAP_RUN_TIME}
 f_edit_slob_conf "NUM_SCHEMAS" ${PGIO_SCHEMA_COUNT}
 f_edit_slob_conf "NUM_THREADS" ${PGIO_THREAD_COUNT}
-f_edit_slob_conf "UPDATE_PCT  ${PGIO_UPDATE_PCT}"
+f_edit_slob_conf "UPDATE_PCT"  ${PGIO_UPDATE_PCT}
 
 for run in 1 2 3;
 do
