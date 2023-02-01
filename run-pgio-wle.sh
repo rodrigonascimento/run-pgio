@@ -110,18 +110,18 @@ f_edit_slob_conf "NUM_THREADS" ${PGIO_THREAD_COUNT}
 
 for run in 1 2 3;
 do
-    echo "Running at ${NUM_SCHEMAS} schemas..."
+    echo "Running at ${PGIO_SCHEMA_COUNT} schemas..."
     echo "LAP_RUN_TIME = ${LAP_RUN_TIME}"
     echo "TEST_TYPE = ${TEST_TYPE}"
     echo "RUN_NAME = ${RUN_NAME}"
-    ${PGIO_HOME}/runit.sh > ${RUN_HOME}/run0${run}_pgio.${ZEROS}${NUM_SCHEMAS}schemas.out 2>&1
+    ${PGIO_HOME}/runit.sh > ${RUN_HOME}/run0${run}_pgio.${PGIO_SCHEMA_COUNT}schemas.out 2>&1
 
     echo "Saving results..."
-    cp ${PGIO_HOME}/pgio.conf ${RUN_HOME}/run0${run}_pgio_conf.${NUM_SCHEMAS}schemas.out
-    mv ${PGIO_HOME}/mpstat.out ${RUN_HOME}/run0${run}_mpstat.${NUM_SCHEMAS}schemas.out
-    mv ${PGIO_HOME}/vmstat.out ${RUN_HOME}/run0${run}_vmstat.${NUM_SCHEMAS}schemas.out
-    mv ${PGIO_HOME}/iostat.out ${RUN_HOME}/run0${run}_iostat.${NUM_SCHEMAS}schemas.out
-    mv ${PGIO_HOME}/pgio_session_detail.out ${RUN_HOME}/run0${run}_pgio_sesssion_detail.${NUM_SCHEMAS}schemas.out
+    cp ${PGIO_HOME}/pgio.conf ${RUN_HOME}/run0${run}_pgio_conf.${PGIO_SCHEMA_COUNT}schemas.out
+    mv ${PGIO_HOME}/mpstat.out ${RUN_HOME}/run0${run}_mpstat.${PGIO_SCHEMA_COUNT}schemas.out
+    mv ${PGIO_HOME}/vmstat.out ${RUN_HOME}/run0${run}_vmstat.${PGIO_SCHEMA_COUNT}schemas.out
+    mv ${PGIO_HOME}/iostat.out ${RUN_HOME}/run0${run}_iostat.${PGIO_SCHEMA_COUNT}schemas.out
+    mv ${PGIO_HOME}/pgio_session_detail.out ${RUN_HOME}/run0${run}_pgio_sesssion_detail.${PGIO_SCHEMA_COUNT}schemas.out
 
     echo "Taking a 300 seconds nap before next lap..."
     sleep 300
